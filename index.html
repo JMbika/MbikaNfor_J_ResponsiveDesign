@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="initial-scale=1.0", width="device-width">
 	<meta charset="UTF-8">
+
 	<title>Document</title>
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<main>
+
 		<h1>Using media queries with responsive design</h1>
+
+		<p class="description">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, doloribus. Unde laboriosam itaque quisquam? Nulla voluptatem quis optio similique unde placeat explicabo sequi ipsa quibusdam ad, esse labore minima nemo?
+		</p>
+
 		<div class="box1"></div>
+
 		<div class="box2"></div>
+
+		<div class="image-container">
+			<!--<img src="images/city.jpg" alt="city" >-->
+			<picture>
+				<source srcset="images/unsplash_small.jpg" media="(max-width:375px">
+				<img src="images/unsplash-small.jpg" alt="city">
+			</picture>
+		</div>
+
 	</main>
+	<script src="js/main.js"></script>
 </body>
 </html>
